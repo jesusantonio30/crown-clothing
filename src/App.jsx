@@ -1,17 +1,10 @@
-import CategoryItem from './components/category-item/category-item.component';
-import CategoriesArr from './utils/categories/CategoriesArr'
-import './categories.styles.scss'
+import Directory from "./components/directory/directory.component"
+import CategoriesArr from "./utils/categories/CategoriesArr"
 
 const App = () => {
 
     return (
-        <div className="categories-container">
-
-            {CategoriesArr.map((category) => (
-            <CategoryItem key={category.id} category={category}/>
-            ))}
-
-        </div>
+        <Directory categories={CategoriesArr}/>
     )
 }
 
